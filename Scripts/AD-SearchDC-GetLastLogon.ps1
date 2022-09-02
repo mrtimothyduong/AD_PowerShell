@@ -50,6 +50,6 @@ ForEach ($DC in $DCs) {
     }
 }
 
-$LogonHistory | Export-CSV -Path $OutputFile -NoTypeInformation -Delimiter ';' -Encoding UTF8
+$LogonHistory | Export-CSV -Path $OutputFile -NoTypeInformation -Delimiter ',' -Encoding UTF8
 
 #########################
